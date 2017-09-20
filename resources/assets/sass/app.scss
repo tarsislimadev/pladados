@@ -7,3 +7,11 @@
 
 // Bootstrap
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+body > .container {
+    margin-top: 60px;
+}
+
+body > .jumbotron + .container {
+    margin-top: auto;
+}
