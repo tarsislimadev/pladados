@@ -15,3 +15,14 @@ body > .container {
 body > .jumbotron + .container {
     margin-top: auto;
 }
+
+.navbar-login {
+    a {
+        margin: 14px 0px 0px;
+        display: inline-block;
+        
+        &.btn.btn-danger {
+            margin: 0px;
+        }
+    }
+}

@@ -27,18 +27,33 @@
                     </button>
                     <a class="navbar-brand" href="/">{{ config('app.name') }}</a>
                 </div>
+                @if(isset($session_id) && $session_id)
+
+                <div id="navbar" class="navbar-collapse collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ $session_name }} <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Perfil</a></li>
+                                <li><a href="#">Meus gráficos</a></li>
+                                <li><a href="#">Meus mapas</a></li>
+                                <li><a href="#">Minhas planilhas</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="{{ route('home.signout') }}">Sair</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+                @else
                 <div id="navbar" class="navbar-collapse collapse">
-                    <form class="navbar-form navbar-right">
-                        <div class="form-group">
-                            <input type="text" placeholder="E-mail" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <input type="password" placeholder="Senha" class="form-control">
-                        </div>
-                        <button type="submit" class="btn btn-success">Entrar</button>
-                        <a type="submit" class="btn btn-danger" href="#">Cadastrar-se</a>
-                    </form>
+                    <div class="navbar-right">
+                        <p class="navbar-login">
+                            <a type="submit" class="" href="{{ route('home.signin') }}">Entrar</a>
+                            <a type="submit" class="btn btn-danger" href="{{ route('home.signup') }}">Cadastre-se</a>
+                        </p>
+                    </div>
                 </div><!--/.navbar-collapse -->
+                @endif
             </div>
         </nav>
 
