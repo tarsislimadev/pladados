@@ -13,6 +13,7 @@ class ComposerServiceProvider extends ServiceProvider {
      * @return void
      */
     public function boot() {
+        \View::creator('layout.default', 'App\Http\ViewComposers\LayoutDefaultComposer');
     }
 
     /**
