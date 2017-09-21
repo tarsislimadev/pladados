@@ -12,7 +12,7 @@
             </div>
             <div class="form-group">
                 <label for="name">Sobrenome</label>
-                <input type="text" class="form-control" id="lastname" name="password" placeholder="Sobrenome">
+                <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Sobrenome">
             </div>
             <div class="form-group">
                 <label for="cpf">CPF</label>
