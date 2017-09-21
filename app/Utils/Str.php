@@ -1,5 +1,7 @@
 <?php
 
+namespace App\Utils;
+
 class Str {
 
     public function encode($str) {
