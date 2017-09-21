@@ -4,11 +4,11 @@ namespace App\Utils;
 
 class Str {
 
-    public function encode($str) {
+    public static function encode($str) {
         return \base64_encode($str);
     }
 
-    public function decode($str) {
+    public static function decode($str) {
         return \base64_decode($str);
     }
 
