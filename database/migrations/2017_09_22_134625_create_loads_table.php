@@ -20,6 +20,8 @@ class CreateLoadsTable extends Migration
             $table->integer('zoom');
             $table->integer('latitude');
             $table->integer('longitude');
+            $table->string('before_script');
+            $table->string('after_script');
             $table->integer('user_id');
             $table->timestamps();
         });
