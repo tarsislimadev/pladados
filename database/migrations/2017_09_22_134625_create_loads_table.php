@@ -17,6 +17,9 @@ class CreateLoadsTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->longText('json');
+            $table->integer('zoom');
+            $table->integer('latitude');
+            $table->integer('longitude');
             $table->integer('user_id');
             $table->timestamps();
         });
