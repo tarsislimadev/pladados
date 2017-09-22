@@ -1,12 +1,11 @@
 @extends('layout.default')
 
 @section('before')
-<div class="jumbotron">
-    <div class="container">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
-    </div>
+<div class="container">
+    <h1>Terremotos no mundo</h1>
+    <p>Veja os terremotos que estão acontecendo pelo mundo. <a href="#">Veja mais...</a></p>
+</div>
+<div id="main_map">
 </div>
 @endsection
 
@@ -28,4 +27,18 @@
         <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
     </div>
 </div>
+@endsection
+
+@section('styles')
+<style>
+    #main_map {
+        height: 300px;
+    }
+</style>
+@endsection
+
+@section('scripts')
+
+@include('template.map', ['map' => $main_map, 'map_id' => 'main_map'])
+
 @endsection

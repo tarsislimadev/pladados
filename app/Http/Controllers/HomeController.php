@@ -5,7 +5,8 @@ namespace App\Http\Controllers;
 class HomeController extends Controller {
 
     public function index() {
-        return view('home.index');
+        $main_map = \App\Load::query()->where('id', 1)->first();
+        return view('home.index', \compact('main_map'));
     }
     
     public function signin() {
