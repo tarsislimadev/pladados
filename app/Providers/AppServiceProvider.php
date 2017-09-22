@@ -13,7 +13,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        \Blade::directive('map_script', function ($expression) {
+            return "<?php echo map_script({$expression}); ?>";
+        });
     }
 
     /**
