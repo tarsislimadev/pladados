@@ -16,7 +16,7 @@ class CreateLoadsTable extends Migration
         Schema::create('loads', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->string('json');
+            $table->longText('json');
             $table->integer('user_id');
             $table->timestamps();
         });
