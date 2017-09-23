@@ -17,11 +17,11 @@ class CreateLoadsTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->longText('json');
-            $table->integer('zoom');
-            $table->integer('latitude');
-            $table->integer('longitude');
-            $table->longText('before_script');
-            $table->longText('after_script');
+            $table->integer('zoom')->nullable();
+            $table->integer('latitude')->nullable();
+            $table->integer('longitude')->nullable();
+            $table->longText('before_script')->nullable();
+            $table->longText('after_script')->nullable();
             $table->integer('user_id');
             $table->timestamps();
         });
