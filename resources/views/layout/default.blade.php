@@ -32,12 +32,19 @@
                 <div id="navbar" class="navbar-collapse collapse navbar-right">
                     <ul class="nav navbar-nav">
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ $session_name }} <span class="caret"></span></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Meus dados <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">Perfil</a></li>
+                                <li><a href="#">Minhas cargas</a></li>
+                                <li role="separator" class="divider"></li>
                                 <li><a href="#">Meus gráficos</a></li>
                                 <li><a href="#">Meus mapas</a></li>
                                 <li><a href="#">Minhas planilhas</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ $session_name }} <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Perfil</a></li>
                                 <li role="separator" class="divider"></li>
                                 <li><a href="{{ route('home.signout') }}">Sair</a></li>
                             </ul>
