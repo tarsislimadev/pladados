@@ -15,7 +15,7 @@ class CreateLoadsTable extends Migration
     {
         Schema::create('loads', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
+            $table->string('name')->nullable();
             $table->longText('json');
             $table->integer('zoom')->nullable();
             $table->integer('latitude')->nullable();
