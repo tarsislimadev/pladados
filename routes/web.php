@@ -14,4 +14,3 @@ Route::group(['prefix' => 'loads'], function () {
     Route::post('save', ['as' => 'loads.save', 'uses' => 'LoadsController@save']);
     Route::post('load', ['as' => 'loads.load', 'uses' => 'LoadsController@load']);
 });
-1
