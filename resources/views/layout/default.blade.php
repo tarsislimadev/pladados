@@ -34,7 +34,7 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Meus dados <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">Minhas cargas</a></li>
+                                <li><a href="{{ route('loads') }}">Minhas cargas</a></li>
                                 <li role="separator" class="divider"></li>
                                 <li><a href="#">Meus gráficos</a></li>
                                 <li><a href="#">Meus mapas</a></li>
