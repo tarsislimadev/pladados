@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Load extends Model {
 
     protected $fillable = [
-        'name', 'json', 'user_id',
+        'id', 'name', 'type', 'text', 'separator', 'quote_char', 'header', 'user_id',
     ];
 
 }
