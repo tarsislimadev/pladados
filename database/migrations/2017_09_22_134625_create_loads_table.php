@@ -16,12 +16,11 @@ class CreateLoadsTable extends Migration
         Schema::create('loads', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name')->nullable();
-            $table->longText('json');
-            $table->integer('zoom')->nullable();
-            $table->integer('latitude')->nullable();
-            $table->integer('longitude')->nullable();
-            $table->longText('before_script')->nullable();
-            $table->longText('after_script')->nullable();
+            $table->string('type')->nullable();
+            $table->longText('text');
+            $table->string('separator')->nullable();
+            $table->string('quote_char')->nullable();
+            $table->integer('header')->nullable();
             $table->integer('user_id');
             $table->timestamps();
         });
