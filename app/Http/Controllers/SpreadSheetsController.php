@@ -10,7 +10,7 @@ class SpreadSheetsController extends Controller {
     }
 
     public function create() {
-        return view('spreadSheets.create');
+        return view('spreadsheets.create');
     }
 
     public function save() {
