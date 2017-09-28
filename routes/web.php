@@ -14,3 +14,11 @@ Route::group(['prefix' => 'loads'], function () {
     Route::post('save', ['as' => 'loads.save', 'uses' => 'LoadsController@save']);
     Route::post('load', ['as' => 'loads.load', 'uses' => 'LoadsController@load']);
 });
+
+Route::group(['prefix' => 'spreadsheets'], function () {
+    Route::get('/', ['as' => 'spreadsheets', 'uses' => 'SpreadsheetsController@index']);
+    Route::get('create', ['as' => 'spreadsheets.create', 'uses' => 'SpreadsheetsController@create']);
+    Route::get('edit/{$id}', ['as' => 'spreadsheets.edit', 'uses' => 'SpreadsheetsController@edit']);
+    Route::post('save', ['as' => 'spreadsheets.save', 'uses' => 'SpreadsheetsController@save']);
+    Route::post('spreadsheet', ['as' => 'spreadsheets.spreadsheet', 'uses' => 'SpreadsheetsController@spreadsheet']);
+});
