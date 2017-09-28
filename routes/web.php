@@ -16,9 +16,9 @@ Route::group(['prefix' => 'loads'], function () {
 });
 
 Route::group(['prefix' => 'spreadsheets'], function () {
-    Route::get('/', ['as' => 'spreadsheets', 'uses' => 'SpreadsheetsController@index']);
-    Route::get('create', ['as' => 'spreadsheets.create', 'uses' => 'SpreadsheetsController@create']);
-    Route::get('edit/{$id}', ['as' => 'spreadsheets.edit', 'uses' => 'SpreadsheetsController@edit']);
-    Route::post('save', ['as' => 'spreadsheets.save', 'uses' => 'SpreadsheetsController@save']);
-    Route::post('spreadsheet', ['as' => 'spreadsheets.spreadsheet', 'uses' => 'SpreadsheetsController@spreadsheet']);
+    Route::get('/', ['as' => 'spreadsheets', 'uses' => 'SpreadSheetsController@index']);
+    Route::get('create', ['as' => 'spreadsheets.create', 'uses' => 'SpreadSheetsController@create']);
+    Route::get('edit/{$id}', ['as' => 'spreadsheets.edit', 'uses' => 'SpreadSheetsController@edit']);
+    Route::post('save', ['as' => 'spreadsheets.save', 'uses' => 'SpreadSheetsController@save']);
+    Route::post('spreadsheet', ['as' => 'spreadsheets.spreadsheet', 'uses' => 'SpreadSheetsController@spreadsheet']);
 });
