@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 class SpreadSheetsController extends Controller {
 
     public function index() {
-        $sheets = \App\SpreadSheet::query()->get();
+        $sheets = \App\Sheet::query()->get();
         return view('spreadsheets.index', \compact('sheets'));
     }
 
@@ -18,11 +18,11 @@ class SpreadSheetsController extends Controller {
         
         $sheet = null;
         if (isset($request['id']) && $request['id']) {
-            $sheet = \App\Spreadsheet::query()->where('id', $request['id'])->first();
+            $sheet = \App\Sheet::query()->where('id', $request['id'])->first();
         }
         
         if ($sheet === null) {
-            $sheet = new \App\Spreadsheet();
+            $sheet = new \App\Sheet();
         }
         
         $sheet->fill($request);

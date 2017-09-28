@@ -4,8 +4,10 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Spreadsheet extends Model
+class Sheet extends Model
 {
+    protected $table = 'spreadsheets';
+    
     protected $fillable = [
         'name', 'type', 'text', 
     ];
