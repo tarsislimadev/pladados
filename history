@@ -1,0 +1,32 @@
+    1  nvm install 20 
+    2  npm i 
+    3  history > history 
+    1  apt upate -y 
+    2  apt 
+    3  apt update 
+    4  apt install -y zip git 
+    5  echo 
+    6  ls -la 
+    7  echo composer create-project laravel/laravel example-app
+    8  composer create-project laravel/laravel pladados # example-app
+    9  ls -la 
+   10  cd pladados/
+   11  ls -la 
+   12  mv * ..
+   13  ls -la 
+   14  cd .
+   15  cd ..
+   16  mv pladados/.editorconfig .
+   17  mv pladados/.env .
+   18  mv pladados/.env.example .
+   19  diff pladados/.gitattributes .gitattributes 
+   20  mv  pladados/.gitattributes .gitattributes 
+   21  mv pladados/.styleci.yml .
+   22  l
+   23  ls -la pladados/
+   24  rm -rf pladados/
+   25  ls -la 
+   26  npm i
+   27  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
+   28  bash
+   29  history >> history 
